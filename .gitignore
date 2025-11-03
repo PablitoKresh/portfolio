@@ -1,0 +1,17 @@
+# Node / React / Vite
+node_modules/
+dist/
+build/
+.env
+.env.local
+.DS_Store
+.vite
+npm-debug.log
+yarn-error.log
+
+# VSCode
+.vscode/
+
+# logs
+logs/
+*.log
