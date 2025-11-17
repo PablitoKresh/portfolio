@@ -15,7 +15,7 @@ Mi objetivo es crear software útil, limpio y escalable, aplicando buenas práct
 - **HTML5**
 - **TailwindCSS (CDN)**
 - **Render (hosting)**  
-- **Dominio personalizado `.dev`** (si se ha configurado)
+- **Dominio personalizado `.dev`** 
 
 Este portfolio no usa frameworks ni build tools: es simple, rápido y fácil de mantener.
 
@@ -40,9 +40,6 @@ portfolio/
 ### 🔹 API RESTful – Django REST Framework  
 API desarrollada con Django REST Framework para gestionar recursos mediante endpoints seguros y estructurados.
 
-**Tecnologías:** Python, DRF, SQLite/PostgreSQL  
-**Repositorio:** *(añadir enlace aquí)*  
-**Probar API:** *(añadir enlace aquí)*  
 
 > Puedes encontrar más proyectos directamente en el portfolio.
 
@@ -51,7 +48,7 @@ API desarrollada con Django REST Framework para gestionar recursos mediante endp
 ## 🌍 Deploy
 Este portfolio está desplegado en:
 
-👉 **https://www.pablobertolet.dev** (si ya está configurado)
+👉 **https://www.pablobertolet.dev** 
 
 ### Hosting:
 Se utiliza **Render.com** como plataforma de despliegue.
