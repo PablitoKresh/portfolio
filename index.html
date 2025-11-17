@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pablo Jiménez Bertolet</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-b from-gray-900 to-gray-800 text-gray-100">
+
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-80 backdrop-blur border-b border-gray-700 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center py-3 px-6 text-gray-200">
+            <span class="font-semibold text-lg">Pablo JB</span>
+            <div class="flex gap-6">
+                <a href="#about" class="hover:text-blue-400 transition">Quién soy</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Proyectos</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="py-24 text-center border-b border-gray-700 mt-14">
+        <div class="flex flex-col items-center gap-4">
+            <img src="img/IMG_7897.PNG" alt="Foto personal" class="w-32 h-32 rounded-full object-cover object-center border-2 border-gray-600 shadow-lg" /> 
+
+            <h1 class="text-4xl font-bold">Pablo Jiménez Bertolet</h1>
+            <p class="text-gray-400 text-lg">Backend Developer · Data Enthusiast</p>
+            <a href="img/CV PABLO JIMENEZ BERTOLET.pdf" target="_blank" class="mt-3 px-4 py-2 bg-green-600 hover:bg-green-500 rounded transition">Descargar
+                CV</a>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-3xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-semibold mb-6">Quién soy</h2>
+
+        <p class="text-gray-300 leading-relaxed mb-4">
+            Soy Pablo Jiménez Bertolet, estudiante de 4º de Ingeniería Informática. Mi amor por la programación nació
+            junto a mi pasión por los videojuegos.
+        </p>
+
+        <p class="text-gray-300 leading-relaxed">
+            Actualmente estoy centrado en el desarrollo backend y en el análisis de datos, mejorando cada día mis
+            habilidades y explorando nuevas tecnologías.
+        </p>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="max-w-4xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-semibold mb-8">Mis Proyectos</h2>
+        <div class="space-y-6">
+
+            <!-- Proyecto 1 -->
+            <div
+                class="p-6 bg-gray-800 rounded-xl shadow border border-gray-700 transform transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <h3 class="text-2xl font-bold mb-2">API RESTful</h3>
+                <p class="text-gray-300 mb-2">API desarrollada con Django REST Framework para la gestión de recursos
+                    mediante endpoints seguros y bien estructurados. Incluye autenticación, serialización avanzada y
+                    buenas prácticas de arquitectura.</p>
+                <p class="text-sm text-gray-400 mb-4">Tecnologías: Python, Django REST framework, SQLite</p>
+                <div class="flex gap-4">
+                    <a href="https://github.com/PablitoKresh/django-api-movies" target="_blank" class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded transition">Ver
+                        en GitHub</a>
+                    <a href="#" target="_blank"
+                        class="px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded transition">Probar API</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 (placeholder para futuros proyectos) -->
+            <div
+                class="p-6 bg-gray-800 rounded-xl shadow border border-gray-700 transform transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <h3 class="text-2xl font-bold mb-2">Web Scrapper (aun en desarrollo)</h3>
+                <p class="text-gray-300 mb-2"></p>
+                <p class="text-sm text-gray-400 mb-4"></p>
+                <div class="flex gap-4">
+                    <a href="#" target="_blank" class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded transition">Ver
+                        en GitHub</a>
+                    <a href="#" target="_blank" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded transition">Ver
+                        Demo</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="max-w-3xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+        <p class="text-gray-300">Puedes contactarme a través de:</p>
+        <ul class="mt-3 space-y-1 text-gray-300">
+            <li>Email: <a href="mailto:pablopan13@gmail.com" class="text-blue-400"
+                    target="_blank">pablopan13@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/PablitoKresh" class="text-blue-400" target="_blank">PablitoKresh</a>
+            </li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/pablo-jimenez-bertolet/" target="_blank"
+                    class="text-blue-400">Pablo Jiménez Bertolet</a></li>
+        </ul>
+    </section>
+
+    <footer class="py-6 text-center text-gray-500 border-t border-gray-700">
+        © 2025 Pablo Jiménez Bertolet
+    </footer>
+</body>
+
+</html>
