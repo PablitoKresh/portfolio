@@ -10,9 +10,140 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap"
+        rel="stylesheet">
     <style>
+        /* ===== Paleta e identidad =====
+           Azul tinta de fondo y ámbar de máquina recreativa como acento,
+           en lugar del gris + azul por defecto de Tailwind. */
+        :root {
+            --tinta: #0f1a2b;
+            --tinta-2: #16243a;
+            --borde: #26364f;
+            --texto: #e8ecf2;
+            --texto-suave: #9ca8ba;
+            --ambar: #f2b544;
+            --ambar-claro: #f7c96d;
+        }
+
         html {
             scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Bricolage Grotesque", system-ui, sans-serif;
+            background: var(--tinta) !important;
+            color: var(--texto);
+        }
+
+        /* Fondos y bordes */
+        nav.bg-gray-900 {
+            background-color: rgba(15, 26, 43, 0.85);
+        }
+
+        .bg-gray-800 {
+            background-color: var(--tinta-2) !important;
+        }
+
+        .border-gray-700,
+        .border-gray-600 {
+            border-color: var(--borde) !important;
+        }
+
+        .text-gray-300 {
+            color: #cfd6e0 !important;
+        }
+
+        .text-gray-400,
+        .text-gray-500 {
+            color: var(--texto-suave) !important;
+        }
+
+        /* Tipografía: el nombre es el elemento protagonista */
+        header h1 {
+            font-size: clamp(2.6rem, 7vw, 4.25rem) !important;
+            font-weight: 800 !important;
+            line-height: 1 !important;
+            margin-top: 0.5rem;
+            letter-spacing: -0.03em;
+            font-variation-settings: "opsz" 96;
+        }
+
+        h2 {
+            font-weight: 800 !important;
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            letter-spacing: -0.01em;
+        }
+
+        section p {
+            max-width: 68ch;
+        }
+
+        code {
+            color: var(--ambar-claro) !important;
+        }
+
+        /* Enlaces del nav y del contacto */
+        .hover\:text-blue-400:hover {
+            color: var(--ambar) !important;
+        }
+
+        /* Botones: principal en ámbar, secundario con borde */
+        .bg-blue-600,
+        .bg-green-600 {
+            background-color: var(--ambar) !important;
+            color: #1b1405;
+            font-weight: 600;
+        }
+
+        .hover\:bg-blue-500:hover,
+        .hover\:bg-green-500:hover {
+            background-color: var(--ambar-claro) !important;
+        }
+
+        .bg-gray-700 {
+            background-color: transparent !important;
+            border: 1px solid var(--borde);
+        }
+
+        .hover\:bg-gray-600:hover {
+            border-color: var(--texto-suave);
+            background-color: rgba(255, 255, 255, 0.04) !important;
+        }
+
+        /* Tarjetas: sin "salto" al pasar el ratón, solo se marca el borde */
+        #projects .hover\:-translate-y-1:hover {
+            --tw-translate-y: 0 !important;
+            transform: none !important;
+            border-color: rgba(242, 181, 68, 0.45) !important;
+        }
+
+        #projects .shadow,
+        #projects .hover\:shadow-xl:hover {
+            box-shadow: none !important;
+        }
+
+        /* Accesibilidad */
+        a:focus-visible {
+            outline: 2px solid var(--ambar);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            * {
+                transition: none !important;
+            }
         }
 
         /* Evita que el nav se parta en dos líneas en móvil */
@@ -123,7 +254,11 @@
                     <a href="https://github.com/PablitoKresh/Amatist-TCG" target="_blank"
                         class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded transition">Ver
                         en GitHub</a>
+                    <a href="https://amatist-tcg-demo.onrender.com" target="_blank"
+                        class="px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded transition">Ver Demo</a>
                 </div>
+                <p class="text-sm text-gray-400 mt-3">La demo está en un servidor gratuito: si lleva un rato sin
+                    visitas, la primera carga tarda unos segundos. Las cuentas de prueba aparecen en el login.</p>
             </div>
 
             <!-- Proyecto 3 -->
